@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <title>Test</title>
+</head>
+<body class="bg-gray-50">
+
+  <!-- Navbar -->
+  <header id="navbar" class="navbar fixed top-0 w-full z-50 bg-white shadow-md py-6">
+    <div class="max-w-7xl mx-auto px-4 flex justify-between items-center">
+      <div class="text-2xl font-bold text-indigo-600">Demo Page</div>
+      <nav class="space-x-7 hidden md:flex">
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Home</a>
+        <a>·</a>
+        <a href="#" class="text-gray-700 hover:text-indigo-600">About</a>
+        <a>·</a>
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Projects</a>
+        <a>·</a>
+        <a href="#" class="text-gray-700 hover:text-indigo-600">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="relative w-full mt-20">
+    <img src="../imgs/Example_1.jpg" alt="Demo" class="w-full shadow-md h-auto" />
+    <div class="absolute top-[23%] left-[47%] -translate-x-1/2 text-center text-white w-120">
+      <h2 class="text-white text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-bold rounded py-2">Lorum Ipsum</h2>
+      <a class="text-base sm:text-md md:text-lg lg:text-xl xl:text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</a>
+      <button class="text-white font-semibold py-2 px-4 rounded hover:text-indigo-600 mt-4">
+        Learn More
+      </button>
+    </div>
+  </div>
+
+  <div class="mt-60 px-4">
+    <h3 class="text-4xl font-semibold mb-2 justify-center flex text-black">What We Do</h3>
+    
+    <div class="relative grid grid-cols-2 gap-20 bg-gray-100 p-16 rounded-lg">
+
+      <div class="absolute top-20 left-1/2 w-px h-[20%] bg-black"></div>
+      <div class="absolute top-1/2 left-60 h-px w-[20%]  bg-black"></div>
+      <div class="absolute top-80 left-1/2 w-px h-[20%] bg-black"></div>
+      <div class="absolute top-1/2 right-60 h-px w-[20%]  bg-black"></div>
+  
+      <!-- Top Left -->
+      <div class="flex flex-col items-center text-center max-w-xs mx-auto">
+        <p class="text-base hover:text-xl transition-all duration-200 text-black font-bold">
+          Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p>
+        <img src="../imgs/cpu.png" class="w-12 h-12 mt-2" />
+      </div>
+  
+      <!-- Top Right -->
+      <div class="flex flex-col items-center text-center max-w-xs mx-auto">
+        <p class="text-base hover:text-xl transition-all duration-200 text-black font-bold">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+        </p>
+        <img src="../imgs/monitor.png" class="w-12 h-12 mt-2" />
+      </div>
+  
+      <!-- Bottom Left -->
+      <div class="flex flex-col items-center text-center max-w-xs mx-auto">
+        <img src="../imgs/shield.png" class="w-12 h-12 mb-1" />
+        <p class="text-base hover:text-xl transition-all duration-200 text-black font-bold">
+          Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+  
+      <!-- Bottom Right -->
+      <div class="flex flex-col items-center text-center max-w-xs mx-auto">
+        <img src="../imgs/responsive.png" class="w-12 h-12 mb-1" />
+        <p class="text-base hover:text-xl transition-all duration-200 text-black font-bold">
+          Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mt-60 bg-gray-100 py-8 flex flex-col md:flex-row gap-4 px-8">
+    <div class="md:w-1/2"> 
+      <img src="../imgs/signup.jpg" alt="Sign Up" class="w-full">
+    </div>
+    <form class="space-y-6 p-6 rounded w-1/2">
+      <h1 class="text-black text-3xl">JOIN TODAY</h1>
+      <div>
+        <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+        <input type="text" id="name" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Your Name">
+      </div>
+    
+      <div>
+        <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+        <input type="email" id="email" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="you@example.com">
+      </div>
+    
+      <div>
+        <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+        <textarea id="message" rows="4" class="mt-1 w-full px-4 py-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Type your message..."></textarea>
+      </div>
+    
+      <button type="submit" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">
+        Submit
+      </button>
+    </form>
+  </div>
+
+  <!--Footer-->
+  <footer class="bg-indigo-600 text-white py-8">
+    <div class="max-w-7xl mx-auto px-4 flex flex-col md:flex-row md:justify-between md:space-x-8 space-y-8 md:space-y-0">
+      <div class="flex-1">
+        <h2 class="text-lg font-semibold mb-2">About Us</h2>
+        <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+      </div>
+  
+      <div class="flex-1">
+        <h2 class="text-lg font-semibold mb-2">Quick Links</h2>
+        <ul class="space-y-1 text-sm">
+          <li><a href="#" class="hover:underline">Home</a></li>
+          <li><a href="#" class="hover:underline">Services</a></li>
+          <li><a href="#" class="hover:underline">Blog</a></li>
+          <li><a href="#" class="hover:underline">Contact</a></li>
+        </ul>
+      </div>
+  
+      <div class="flex-1">
+        <h2 class="text-lg font-semibold mb-2">Follow Us</h2>
+        <div class="flex space-x-4">
+          <a href="#" class="hover:underline">Facebook</a>
+          <a href="#" class="hover:underline">Twitter</a>
+          <a href="#" class="hover:underline">Instagram</a>
+        </div>
+      </div>
+    </div>
+  
+    <div class="mt-8 text-center text-sm text-gray-400">
+      &copy; 2025 Demo Company. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    const navbar = document.getElementById('navbar');
+    let lastScrollY = window.scrollY;
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > lastScrollY && window.scrollY > 50) {
+        // Scrolling down
+        navbar.classList.add('py-2');
+        navbar.classList.remove('py-6');
+      } else {
+        // Scrolling up
+        navbar.classList.add('py-6');
+        navbar.classList.remove('py-2');
+      }
+      lastScrollY = window.scrollY;
+    });
+  </script>
+
+</body>
+</html>
+
